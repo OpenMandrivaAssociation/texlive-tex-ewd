@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-tex-ewd
 Version:	20081115
-Release:	9
+Release:	10
 Summary:	Macros to typeset calculational proofs and programs in Dijkstra's style
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/tex-ewd
