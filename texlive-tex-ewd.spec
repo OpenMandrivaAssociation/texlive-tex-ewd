@@ -5,7 +5,7 @@
 # catalog-license bsd
 # catalog-version undef
 Name:		texlive-tex-ewd
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	Macros to typeset calculational proofs and programs in Dijkstra's style
 Group:		Publishing
