@@ -1,18 +1,12 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/generic/tex-ewd
-# catalog-date 2008-11-15 12:33:11 +0100
-# catalog-license bsd
-# catalog-version undef
 Name:		texlive-tex-ewd
-Version:	20190228
+Version:	15878
 Release:	1
 Summary:	Macros to typeset calculational proofs and programs in Dijkstra's style
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/tex-ewd
 License:	BSD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tex-ewd.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tex-ewd.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tex-ewd.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tex-ewd.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ provides macros that support calculational proofs and
 Dijkstra's "guarded command language".
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -42,23 +36,10 @@ Dijkstra's "guarded command language".
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20081115-2
-+ Revision: 756619
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20081115-1
-+ Revision: 719684
-- texlive-tex-ewd
-- texlive-tex-ewd
-- texlive-tex-ewd
-
