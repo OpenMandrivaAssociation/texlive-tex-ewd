@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	Macros to typeset calculational proofs and programs in Dijkstra's style
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/generic/tex-ewd
+URL:		https://www.ctan.org/tex-archive/macros/generic/tex-ewd
 License:	BSD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tex-ewd.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tex-ewd.doc.r%{version}.tar.xz
